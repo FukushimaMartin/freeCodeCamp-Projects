@@ -56,6 +56,10 @@ function renderCourse(containerSelector, modules){
       const li = document.createElement("li");
       li.className = "module lesson";
 
+      const link = document.createElement("a");
+      link.href = `../lessons/lesson.html?id=${lesson.id}`;
+      link.className = "lesson-link";
+
       const left = document.createElement("div");
       left.className = "module-left";
 
@@ -92,8 +96,10 @@ function renderCourse(containerSelector, modules){
 
       right.appendChild(badge);
 
-      li.appendChild(left);
-      li.appendChild(right);
+      link.appendChild(left);
+      link.appendChild(right);
+
+      li.appendChild(link);
 
       ul.appendChild(li);
 
