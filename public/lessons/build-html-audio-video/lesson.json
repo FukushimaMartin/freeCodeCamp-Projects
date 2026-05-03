@@ -1,0 +1,22 @@
+{
+  "id": "build-html-audio-video",
+  "title": "Build an HTML Audio and Video Player",
+  "course": "Responsive Web Design",
+  "module": "Basic HTML",
+  "type": "Lab",
+  "description": "A combined media page that embeds both a video and an audio player using native HTML elements. The page uses a main element with two sections — one for a video with a source element specifying the file type, and one for a looping audio track — demonstrating how to handle different media types within a single structured page.",
+  "objectives": [
+    "Use main and section elements for semantic page structure",
+    "Embed a video with the video element and a nested source element",
+    "Embed audio using the audio element with src, controls, and loop",
+    "Set appropriate width and controls attributes on media elements",
+    "Match the type attribute to the correct MIME type of each media file"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>HTML Audio and Video Lab</title>\n  </head>\n  <body>\n    <main>\n      <h1>HTML Audio and Video Lab</h1>\n\n      <section>\n        <h2>What is the map method and how does it work?</h2>\n        <video controls width=\"640\">\n          <source src=\"https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4\" type=\"video/mp4\">\n        </video>\n      </section>\n\n      <section>\n        <h2>Sailing Away</h2>\n        <audio src=\"https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3\" controls loop>\n        </audio>\n      </section>\n\n    </main>\n  </body>\n</html>"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "build-tech-conference-table",
+  "title": "Build a Tech Conference Schedule Table",
+  "course": "Responsive Web Design",
+  "module": "Accessibility",
+  "type": "Workshop",
+  "description": "An accessible conference schedule table with scope attributes on all header cells to explicitly associate them with their rows and columns. The table covers six time slots across three tracks, with colspan used for break rows and th scope='row' for time headers.",
+  "objectives": [
+    "Use scope='col' on column headers to aid screen readers",
+    "Use scope='row' on row headers to identify time slots",
+    "Use colspan to merge cells for shared events like breaks",
+    "Add a caption to describe the table's purpose",
+    "Structure a table with thead and tbody"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Tech Conference 2025 Schedule</title>\n</head>\n<body>\n  <h1>Tech Conference 2025 Schedule</h1>\n  <table>\n    <caption>Schedule by Track and Time</caption>\n    <thead>\n      <tr>\n        <th scope=\"col\">Time</th>\n        <th scope=\"col\">Track A</th>\n        <th scope=\"col\">Track B</th>\n        <th scope=\"col\">Track C</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <th scope=\"row\">9:00 AM</th>\n        <td>Keynote: Tech Future</td>\n        <td>Intro to Web Dev</td>\n        <td>UX for All</td>\n      </tr>\n      <tr>\n        <th scope=\"row\">10:00 AM</th>\n        <td>Accessibility Deep Dive</td>\n        <td>CSS for Beginners</td>\n        <td>Inclusive Design Principles</td>\n      </tr>\n      <tr>\n        <th scope=\"row\">11:00 AM</th>\n        <td colspan=\"3\">Break</td>\n      </tr>\n      <tr>\n        <th scope=\"row\">11:30 AM</th>\n        <td>AR/VR in Education</td>\n        <td>JavaScript Fundamentals</td>\n        <td>Design Systems at Scale</td>\n      </tr>\n      <tr>\n        <th scope=\"row\">12:30 PM</th>\n        <td colspan=\"3\">Lunch Break</td>\n      </tr>\n      <tr>\n        <th scope=\"row\">2:00 PM</th>\n        <td>Voice UI Workshop</td>\n        <td>Git &amp; GitHub Essentials</td>\n        <td>Color &amp; Contrast in UI</td>\n      </tr>\n    </tbody>\n  </table>\n</body>\n</html>"
+    }
+  ]
+}

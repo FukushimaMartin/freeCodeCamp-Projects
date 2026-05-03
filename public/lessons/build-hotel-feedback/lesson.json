@@ -1,0 +1,23 @@
+{
+  "id": "build-hotel-feedback",
+  "title": "Build a Hotel Feedback Form",
+  "course": "Responsive Web Design",
+  "module": "Forms and Tables",
+  "type": "Workshop",
+  "description": "A full hotel feedback form with multiple fieldsets covering personal information, radio buttons for first-time stay, checkboxes for booking reasons, dropdown selects for service and food ratings, a textarea for comments, and a submit button. It demonstrates form structure, input types, labels, required fields, and grouped controls.",
+  "objectives": [
+    "Use fieldset and legend to group related form controls",
+    "Use label with for to associate labels with inputs",
+    "Use text, email, number, radio, and checkbox input types",
+    "Use select and option for dropdown menus",
+    "Use textarea for multi-line text input",
+    "Add a submit button to complete a form"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <title>Hotel Feedback Form</title>\n  </head>\n  <body>\n    <header>\n      <h1>Hotel Feedback Form</h1>\n      <p>Thank you for staying with us. Please provide feedback on your recent stay.</p>\n    </header>\n    <main>\n      <form method=\"POST\" action=\"https://hotel-feedback.freecodecamp.org\">\n        <fieldset>\n          <legend>Personal Information</legend>\n          <label for=\"full-name\">Name (required):</label>\n          <input type=\"text\" id=\"full-name\" name=\"name\" placeholder=\"e.g., John Doe\" required size=\"20\">\n\n          <label for=\"email\">Email address (required):</label>\n          <input placeholder=\"example@email.com\" required id=\"email\" type=\"email\" name=\"email\" size=\"20\" />\n\n          <label for=\"age\">Age (optional):</label>\n          <input type=\"number\" name=\"age\" id=\"age\" min=\"3\" max=\"100\" />\n        </fieldset>\n\n        <fieldset>\n          <legend>Was this your first time at our hotel?</legend>\n          <input id=\"yes-option\" type=\"radio\" name=\"hotel-stay\" value=\"yes\" />\n          <label for=\"yes-option\">Yes</label>\n          <input id=\"no-option\" type=\"radio\" name=\"hotel-stay\" value=\"no\" />\n          <label for=\"no-option\">No</label>\n        </fieldset>\n\n        <fieldset>\n          <legend>Why did you choose to stay at our hotel? (Check all that apply)</legend>\n          <input type=\"checkbox\" id=\"ads\" name=\"choice\" value=\"ads\" />\n          <label for=\"ads\">Social Media Ads</label>\n\n          <input type=\"checkbox\" id=\"recommendation\" name=\"choice\" value=\"recommendation\" />\n          <label for=\"recommendation\">Personal Recommendation</label>\n\n          <input type=\"checkbox\" id=\"location\" name=\"choice\" value=\"location\" />\n          <label for=\"location\">Location</label>\n\n          <input checked type=\"checkbox\" id=\"reputation\" name=\"choice\" value=\"reputation\" />\n          <label for=\"reputation\">Reputation</label>\n\n          <input type=\"checkbox\" id=\"price\" name=\"choice\" value=\"price\" />\n          <label for=\"price\">Price</label>\n        </fieldset>\n\n        <fieldset>\n          <legend>Ratings</legend>\n          <label for=\"service\">How was the service?</label>\n          <select name=\"service\" id=\"service\">\n            <option value=\"poor\">Poor</option>\n            <option value=\"satisfactory\">Satisfactory</option>\n            <option value=\"good\">Good</option>\n            <option value=\"very-good\">Very Good</option>\n            <option selected value=\"excellent\">Excellent</option>\n          </select>\n\n          <label for=\"food\">How was the food?</label>\n          <select name=\"food\" id=\"food\">\n            <option value=\"poor\">Poor</option>\n            <option value=\"satisfactory\">Satisfactory</option>\n            <option value=\"good\">Good</option>\n            <option value=\"very-good\">Very Good</option>\n            <option selected value=\"excellent\">Excellent</option>\n          </select>\n        </fieldset>\n\n        <label for=\"comments\">Other Comments?</label>\n        <textarea cols=\"30\" rows=\"10\" name=\"comments\" id=\"comments\"></textarea>\n\n        <button type=\"submit\">Submit</button>\n      </form>\n    </main>\n  </body>\n</html>"
+    }
+  ]
+}

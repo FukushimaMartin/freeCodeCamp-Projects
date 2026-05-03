@@ -1,0 +1,21 @@
+{
+  "id": "build-final-exams-table",
+  "title": "Build a Final Exams Table",
+  "course": "Responsive Web Design",
+  "module": "Forms and Tables",
+  "type": "Workshop",
+  "description": "An HTML table displaying calculus final exam grades for five students. The table uses caption, thead, tbody, and tfoot elements for semantic structure, with th elements for column headers and a colspan attribute in the footer to span the average grade cell across two columns.",
+  "objectives": [
+    "Use table, thead, tbody, and tfoot to structure a data table",
+    "Add a caption element to describe the table",
+    "Use th for header cells and td for data cells",
+    "Use the colspan attribute to merge cells across columns"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Calculus Final Exams Table</title>\n    <meta charset=\"UTF-8\" />\n  </head>\n  <body>\n    <table>\n      <caption>Calculus Final Exam Grades</caption>\n      <thead>\n        <tr>\n          <th>Last Name</th>\n          <th>First Name</th>\n          <th>Grade</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>Davis</td>\n          <td>Alex</td>\n          <td>54</td>\n        </tr>\n        <tr>\n          <td>Doe</td>\n          <td>Samantha</td>\n          <td>92</td>\n        </tr>\n        <tr>\n          <td>Rodriguez</td>\n          <td>Marcus</td>\n          <td>88</td>\n        </tr>\n        <tr>\n          <td>Thompson</td>\n          <td>Jane</td>\n          <td>77</td>\n        </tr>\n        <tr>\n          <td>Williams</td>\n          <td>Natalie</td>\n          <td>83</td>\n        </tr>\n      </tbody>\n      <tfoot>\n        <tr>\n          <td colspan=\"2\">Average Grade</td>\n          <td>78.8</td>\n        </tr>\n      </tfoot>\n    </table>\n  </body>\n</html>"
+    }
+  ]
+}

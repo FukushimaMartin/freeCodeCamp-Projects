@@ -1,0 +1,28 @@
+{
+  "id": "design-blog-post-card",
+  "title": "Design a Blog Post Card",
+  "course": "Responsive Web Design",
+  "module": "Basic CSS",
+  "type": "Lab",
+  "description": "A blog post card component with a full-width cover image, a content area with a title, excerpt, and a styled Read More button. CSS covers background colors, border-radius for rounded corners, box-shadow, a bottom border on the image, padding, non-default text colors, margins, and a hover effect on the button.",
+  "objectives": [
+    "Use border-radius to create rounded corners on a card",
+    "Use box-shadow to give a card a subtle elevation effect",
+    "Style an image to fill its container's full width with width: 100%",
+    "Add a border-bottom to separate the image from card content",
+    "Style a link as a button with display: inline-block, padding, and border-radius",
+    "Use a :hover pseudo-class to change button background color"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Blog Post Card</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <div class=\"blog-post-card\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg\" alt=\"Blog Post Image\" class=\"post-img\">\n      <div class=\"post-content\">\n        <h2 class=\"post-title\">Learn Web Development in 2024</h2>\n        <p class=\"post-excerpt\">Stay ahead of the curve with the latest trends in web development. Discover what's new and exciting in 2024</p>\n        <a href=\"#\" class=\"read-more\">Read More</a>\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "body {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  margin: 0;\n  background-color: #f0f0f0;\n  font-family: Arial, sans-serif;\n}\n\n.blog-post-card {\n  background-color: white;\n  border-radius: 15px;\n  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  width: 350px;\n  margin: 20px;\n  text-align: center;\n}\n\n.post-img {\n  width: 100%;\n  height: auto;\n  border-bottom: 5px solid #333;\n}\n\n.post-content {\n  padding: 20px;\n}\n\n.post-title {\n  color: #333;\n  margin: 0 0 10px;\n}\n\n.post-excerpt {\n  color: #667;\n  margin: 10px 0;\n}\n\n.read-more {\n  display: inline-block;\n  margin-top: 10px;\n  padding: 10px 15px;\n  background-color: #333;\n  color: white;\n  text-decoration: none;\n  border-radius: 5px;\n}\n\n.read-more:hover {\n  background-color: #555;\n}"
+    }
+  ]
+}

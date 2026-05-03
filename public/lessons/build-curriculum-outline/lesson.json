@@ -1,0 +1,20 @@
+{
+  "id": "build-curriculum-outline",
+  "title": "Build a Curriculum Outline",
+  "course": "Responsive Web Design",
+  "module": "Basic HTML",
+  "type": "Workshop",
+  "description": "HTML is the foundation of every webpage — it defines content and structure using elements like headings and paragraphs. In this exercise, a curriculum outline was built to introduce the three core web technologies: HTML, CSS, and JavaScript, each described with a heading and a short paragraph.",
+  "objectives": [
+    "Use heading elements (h1, h2, h3) to create a content hierarchy",
+    "Use paragraph elements to add descriptive text",
+    "Structure a page around a real-world topic"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<h1>Welcome to freeCodeCamp</h1>\n<h2>Full-Stack Curriculum</h2>\n<p>Learn the skills to become a full-stack developer</p>\n\n<h3>Introduction to HTML</h3>\n<p>HTML represents the content and structure of a webpage</p>\n\n<h3>Introduction to CSS</h3>\n<p>CSS is used to style a webpage</p>\n\n<h3>Introduction to JavaScript</h3>\n<p>JavaScript adds interactivity to a webpage</p>"
+    }
+  ]
+}

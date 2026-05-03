@@ -1,0 +1,22 @@
+{
+  "id": "build-video-iframe",
+  "title": "Build a Video Display Using iframe",
+  "course": "Responsive Web Design",
+  "module": "Basic HTML",
+  "type": "Workshop",
+  "description": "A YouTube video embedded in a webpage using the iframe element. The exercise covers the key iframe attributes needed for a proper embedded video experience: width and height for sizing, src for the video URL, allow for browser feature permissions, referrerpolicy for privacy control, and allowfullscreen so users can go full screen.",
+  "objectives": [
+    "Use the iframe element to embed external content",
+    "Set width and height to size the iframe",
+    "Point src to a YouTube embed URL",
+    "Use the allow attribute to grant browser feature permissions",
+    "Add referrerpolicy and allowfullscreen for security and UX"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Display Videos in an iframe</title>\n  </head>\n  <body>\n    <h1>iframe Video Display</h1>\n    <iframe\n      width=\"560\"\n      height=\"315\"\n      src=\"https://www.youtube.com/embed/I0_951_MPE0\"\n      allow=\"accelerometer autoplay clipboard-write encrypted-media gyroscope web-share\"\n      referrerpolicy=\"strict-origin-when-cross-origin\"\n      allowfullscreen\n    >\n    </iframe>\n  </body>\n</html>"
+    }
+  ]
+}

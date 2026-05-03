@@ -1,0 +1,28 @@
+{
+  "id": "design-business-card",
+  "title": "Design a Business Card",
+  "course": "Responsive Web Design",
+  "module": "Basic CSS",
+  "type": "Lab",
+  "description": "A styled business card component centered on the page. The card includes a profile image, name, designation, company, contact details, a portfolio link, and social media links. CSS covers background colors, border, padding, centered layout with auto margins, image sizing, link styling, and a social media section.",
+  "objectives": [
+    "Center a fixed-width card using margin: auto",
+    "Style an image with max-width, fixed dimensions, and a border",
+    "Remove text decoration from anchor elements",
+    "Apply consistent margin to p elements",
+    "Use background-color, padding, and border on a container element",
+    "Link an external stylesheet from the head element"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Business Card</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <div class=\"business-card\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/labs/flower.jpg\" alt=\"A vibrant flower in full bloom\" class=\"profile-image\">\n      <p class=\"full-name\">Your Name</p>\n      <p class=\"designation\">Software Developer</p>\n      <p class=\"company\">@freeCodeCamp</p>\n      <hr>\n      <p>Email: your-email@example.com</p>\n      <p>Phone: (123) 456-7890</p>\n      <a class=\"portfolio-link\" href=\"http://example.com\">Portfolio</a>\n      <hr>\n      <div class=\"social-media\">\n        <h2>Connect with me</h2>\n        <a href=\"http://twitter.com/\">Twitter</a>\n        <a href=\"http://linkedin.com/\">LinkedIn</a>\n        <a href=\"http://github.com/\">GitHub</a>\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "body {\n  background-color: rosybrown;\n  font-family: Arial, sans-serif;\n}\n\n.business-card {\n  background-color: lavenderblush;\n  border: 3px solid darkslategray;\n  padding: 20px;\n  text-align: center;\n  font-size: 16px;\n  width: 300px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 100px;\n}\n\n.profile-image {\n  max-width: 100%;\n  width: 150px;\n  height: 150px;\n  margin-bottom: 10px;\n  border: 2px solid lightgray;\n}\n\n.full-name {\n  font-size: 24px;\n  color: darkslategray;\n}\n\n.designation {\n  font-size: 18px;\n  color: gray;\n}\n\n.company {\n  font-size: 16px;\n  color: darkgray;\n}\n\np {\n  margin: 5px 0;\n}\n\na {\n  text-decoration: none;\n}\n\n.social-media {\n  margin-top: 10px;\n  font-size: 14px;\n}\n\n.social-media a {\n  margin: 10px;\n  color: maroon;\n}\n\nhr {\n  margin: 20px 0;\n}"
+    }
+  ]
+}

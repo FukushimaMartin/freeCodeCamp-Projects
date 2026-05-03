@@ -1,0 +1,22 @@
+{
+  "id": "build-travel-agency",
+  "title": "Build a Travel Agency Page",
+  "course": "Responsive Web Design",
+  "module": "Basic HTML",
+  "type": "Lab",
+  "description": "A travel agency landing page for Italy-focused tours. The page introduces the destination, outlines available package types with linked list items, and showcases three top itineraries using figure elements with linked images and captions. It also demonstrates SEO best practices with a meta description tag.",
+  "objectives": [
+    "Build a full HTML document with SEO meta description",
+    "Use h1 and h2 to create a clear content hierarchy",
+    "Create a linked unordered list for navigation options",
+    "Use figure, anchor, img, and figcaption together for visual content",
+    "Set target and href attributes on anchor elements correctly"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"description\" content=\"Explore Italy with guided tours, excursions, and holiday packages for all types of travelers.\">\n    <title>Travel Agency Page</title>\n  </head>\n  <body>\n    <h1>Discover Italy</h1>\n    <p>\n      Art, folklore, food, nature, and more. Choose among our wide selection of\n      guided tours and excursions, and live an unforgettable experience\n      exploring Italy.\n    </p>\n    <h2>Packages</h2>\n    <p>\n      We offer an extensive range of holiday solutions to accommodate the needs\n      of all our clients. From daily excursions in the most beautiful cities, to\n      thorough tours of hidden villages and medieval towns to discover Italy's\n      lesser-known sides.\n    </p>\n    <ul>\n      <li>\n        <a href=\"https://www.freecodecamp.org/learn\" target=\"_blank\">Group Travels</a>\n      </li>\n      <li>\n        <a href=\"https://www.freecodecamp.org/learn\" target=\"_blank\">Private Tours</a>\n      </li>\n    </ul>\n    <h2>Top Itineraries</h2>\n    <figure>\n      <a href=\"https://www.freecodecamp.org/learn\" target=\"_blank\">\n        <img src=\"https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg\" alt=\"colosseum view\">\n      </a>\n      <figcaption>Rome and Center Italy</figcaption>\n    </figure>\n    <figure>\n      <a href=\"https://www.freecodecamp.org/learn\" target=\"_blank\">\n        <img src=\"https://cdn.freecodecamp.org/curriculum/labs/alps.jpg\" alt=\"dolomites mountain view\">\n      </a>\n      <figcaption>Nature and National Parks</figcaption>\n    </figure>\n    <figure>\n      <a href=\"https://www.freecodecamp.org/learn\" target=\"_blank\">\n        <img src=\"https://cdn.freecodecamp.org/curriculum/labs/sea.jpg\" alt=\"sea view\">\n      </a>\n      <figcaption>South Italy and Islands</figcaption>\n    </figure>\n  </body>\n</html>"
+    }
+  ]
+}

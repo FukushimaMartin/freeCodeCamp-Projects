@@ -1,0 +1,22 @@
+{
+  "id": "build-video-compilation",
+  "title": "Build a Video Compilation Page",
+  "course": "Responsive Web Design",
+  "module": "Basic HTML",
+  "type": "Lab",
+  "description": "A structured page covering the three pillars of front-end development — HTML, CSS, and JavaScript — each presented in its own section with a heading, introductory paragraph, and an embedded YouTube video. The page demonstrates how to use iframe inside section elements with all required attributes for accessible, properly sized embeds.",
+  "objectives": [
+    "Use main and section elements to organize page content semantically",
+    "Embed YouTube videos using the iframe element",
+    "Set src, width, height, and title attributes on each iframe",
+    "Use allow, referrerpolicy, and allowfullscreen for proper iframe configuration",
+    "Repeat a consistent section structure across multiple content blocks"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Front-End Web Development</title>\n  </head>\n  <body>\n    <main>\n      <h1>Front-End Web Development</h1>\n      <p>Front-End Web Development involves designing and building user interfaces of websites using HTML, CSS, and JavaScript. It focuses on creating visually appealing, interactive, and user-friendly websites. Front-end developers ensure accessibility, performance optimization, and adherence to web standards, blending creativity with technical expertise.</p>\n      <section>\n        <h2>HTML</h2>\n        <p>HTML, or HyperText Markup Language, forms the backbone of web pages by defining their basic structure and layout. It uses a series of elements to display text, images, lists, tables, and other static content on a web page.</p>\n        <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/GDGejH3SDNQ?si=KJYLgcz4kyyroYMB\" title=\"html and coding introduction video\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n      </section>\n      <section>\n        <h2>CSS</h2>\n        <p>CSS, or Cascading Style Sheets, is used to control the visual presentation of HTML elements on a web page. It allows for customized styling, including colors, fonts, layouts, and spacing, making websites visually appealing. CSS also supports responsive design, ensuring web pages look good on all devices.</p>\n        <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/OXGznpKZ_sA?si=s3KDSZvrhU_PU9XL\" title=\"css tutorial video\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n      </section>\n      <section>\n        <h2>JavaScript</h2>\n        <p>JavaScript is a programming language that adds interactivity to static web pages, enabling dynamic content updates, form validations, animations, and responsive behaviors based on user interactions and events.</p>\n        <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/jS4aFq5-91M?si=zKQhHEYwU4tnMmVm\" title=\"javascript programming video\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n      </section>\n    </main>\n  </body>\n</html>"
+    }
+  ]
+}

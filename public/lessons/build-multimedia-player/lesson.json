@@ -1,0 +1,22 @@
+{
+  "id": "build-multimedia-player",
+  "title": "Build a Multimedia Player",
+  "course": "Responsive Web Design",
+  "module": "Accessibility",
+  "type": "Lab",
+  "description": "A multimedia player page with three sections: an audio player with ARIA label and a source element, a video player with ARIA label, a source element, and a track element for captions, and a transcript section with a paragraph summarizing the video content.",
+  "objectives": [
+    "Use aria-label on audio and video elements for screen reader context",
+    "Use source elements inside audio and video to specify media files and MIME types",
+    "Add a track element with kind, srclang, label, and src for captions",
+    "Use three section elements to separate audio, video, and transcript",
+    "Write a transcript paragraph for video accessibility"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Multimedia Player</title>\n  </head>\n  <body>\n    <h1>Multimedia Player</h1>\n\n    <section>\n      <h2>Now Playing: Sailing Away</h2>\n      <audio controls aria-label=\"Audio Player for Sailing Away\">\n        <source src=\"https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3\" type=\"audio/mpeg\">\n      </audio>\n    </section>\n\n    <section>\n      <h2>What is a map method and how does it work?</h2>\n      <video controls width=\"600\" aria-label=\"What is a map method and how does it work?\">\n        <source src=\"https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4\" type=\"video/mp4\">\n        <track src=\"https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.vtt\" kind=\"captions\" srclang=\"en\" label=\"English\" default>\n      </video>\n    </section>\n\n    <section>\n      <h2>Transcript</h2>\n      <p>What is a map method and how does it work? The map method is a powerful and widely used function in JavaScript that operates on arrays. It's designed to create a new array by applying a given function to each element of the original array. This method does not modify the original array, but instead returns the new array containing the results of the function applied to each element.</p>\n    </section>\n  </body>\n</html>"
+    }
+  ]
+}

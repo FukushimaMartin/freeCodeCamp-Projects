@@ -1,0 +1,22 @@
+{
+  "id": "build-bookstore-page",
+  "title": "Build a Bookstore Page",
+  "course": "Responsive Web Design",
+  "module": "Basic HTML",
+  "type": "Workshop",
+  "description": "A bookstore page structured entirely with div elements, classes, and IDs. Two book cards display titles and descriptions with individual Buy Now buttons. A separate cart section at the bottom includes View Cart and Checkout buttons, demonstrating how to use divs to organize and group content into meaningful UI components.",
+  "objectives": [
+    "Use div elements to group and structure page content",
+    "Apply classes to style multiple elements consistently",
+    "Use IDs to uniquely identify specific elements",
+    "Build a card-based layout for displaying items",
+    "Add interactive button elements with descriptive text"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <title>XYZ Bookstore Page</title>\n</head>\n\n<body>\n  <h1>XYZ Bookstore</h1>\n  <p>Browse our collection of amazing books!</p>\n\n  <div class=\"card-container\">\n    <div class=\"card\" id=\"sally-adventure-book\">\n      <h2>Sally's SciFi Adventure</h2>\n      <p>This is an epic story of Sally and her dog Rex as they navigate through other worlds.</p>\n      <button class=\"btn\">Buy Now</button>\n    </div>\n\n    <div class=\"card\" id=\"dave-cooking-book\">\n      <h2>Dave's Cooking Adventure</h2>\n      <p>This is the story of Dave as he learns to cook everything from pancakes to pasta, one recipe at a time.</p>\n      <button class=\"btn\">Buy Now</button>\n    </div>\n  </div>\n\n  <p>Review your selections and continue to checkout.</p>\n\n  <div class=\"btn-container\">\n    <button id=\"view-cart-btn\" class=\"btn\">View Cart</button>\n    <button id=\"checkout-btn\" class=\"btn\">Checkout</button>\n  </div>\n</body>\n\n</html>"
+    }
+  ]
+}

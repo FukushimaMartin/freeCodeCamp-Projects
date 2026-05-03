@@ -1,0 +1,22 @@
+{
+  "id": "build-recipe-page",
+  "title": "Build a Recipe Page",
+  "course": "Responsive Web Design",
+  "module": "Basic HTML",
+  "type": "Lab",
+  "description": "A complete recipe page for Chocolate Chip Cookies, built with proper HTML document structure. The page introduces the recipe with a heading and paragraph, displays an image of the ingredients, and lists everything needed along with step-by-step baking instructions using ordered and unordered lists.",
+  "objectives": [
+    "Build a valid HTML document with DOCTYPE, lang, head, and body",
+    "Include a meta charset and a descriptive title in the head",
+    "Use h1 and h2 to organize page sections",
+    "Add an image with a descriptive alt attribute",
+    "Use an unordered list for ingredients and an ordered list for steps"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Chocolate Chip Cookies</title>\n  </head>\n  <body>\n    <h1>Chocolate Chip Cookies</h1>\n    <p>Welcome to the ultimate guide for making mini chocolate chip cookies! These bite-sized treats are perfect for satisfying your sweet tooth without overindulging. Follow this simple recipe to create delicious, crispy-on-the-outside, chewy-on-the-inside mini chocolate chip cookies that everyone will love.</p>\n    <img src=\"https://cdn.freecodecamp.org/curriculum/labs/recipe.jpg\" alt=\"Ingredients for baking: three eggs, a bowl of flour, a glass of milk, and a whisk arranged on a wooden table.\">\n    <h2>Ingredients</h2>\n    <ul>\n      <li>1 cup all-purpose flour</li>\n      <li>1/2 teaspoon baking soda</li>\n      <li>1/4 cup unsalted butter, softened</li>\n      <li>1/4 cup granulated sugar</li>\n      <li>1/2 teaspoon vanilla extract</li>\n      <li>1/2 cup mini chocolate chips</li>\n    </ul>\n    <h2>Instructions</h2>\n    <ol>\n      <li>Preheat your oven to 350°F (175°C) and line a baking sheet with parchment paper.</li>\n      <li>In a bowl, whisk together the flour and baking soda.</li>\n      <li>In another bowl, beat the butter, sugar, and vanilla extract until creamy.</li>\n      <li>Gradually add the dry ingredients to the wet mixture, then fold in the mini chocolate chips.</li>\n      <li>Drop small spoonfuls of dough onto the baking sheet.</li>\n      <li>Bake for 8-10 minutes, then let cool before enjoying!</li>\n    </ol>\n  </body>\n</html>"
+    }
+  ]
+}

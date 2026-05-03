@@ -1,0 +1,22 @@
+{
+  "id": "build-cat-blog",
+  "title": "Build a Cat Blog Page",
+  "course": "Responsive Web Design",
+  "module": "Semantic HTML",
+  "type": "Workshop",
+  "description": "A complete blog page for Mr. Whiskers the cat, built with semantic HTML. The page includes a header with a figure and nav links, a main section with About and Posts sections containing multiple articles, and a footer with a contact address that uses clickable phone and email links.",
+  "objectives": [
+    "Use header, main, footer, and nav for full page structure",
+    "Use section, article, and aside as semantic content containers",
+    "Use figure and figcaption to caption an image",
+    "Create in-page anchor links using id attributes",
+    "Use the address element with tel: and mailto: links"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Mr. Whiskers' Blog</title>\n    <meta charset=\"UTF-8\" />\n  </head>\n  <body>\n    <header>\n      <h1>Welcome to Mr. Whiskers' Blog Page!</h1>\n      <figure>\n        <img\n          src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg\"\n          alt=\"a cat in the garden\"\n        />\n        <figcaption>Mr. Whiskers in the Garden</figcaption>\n      </figure>\n      <nav>\n        <ul>\n          <li><a href=\"#about\">About</a></li>\n          <li><a href=\"#posts\">Posts</a></li>\n          <li><a href=\"#contact\">Contact</a></li>\n        </ul>\n      </nav>\n    </header>\n    <main>\n      <section id=\"about\">\n        <h2>About</h2>\n        <p>\n          Hi there! I'm Jane Doe, a passionate writer who finds endless inspiration in the antics of my beloved cat, Mr. Whiskers.\n        </p>\n        <p>\n          His playful nature and boundless energy keeps me on my toes. I love him so much.\n        </p>\n      </section>\n      <section id=\"posts\">\n        <h2>Posts</h2>\n        <article>\n          <h3>Mr. Whiskers' First Day Home</h3>\n          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.</p>\n          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.</p>\n        </article>\n        <article>\n          <h3>Mr. Whiskers' First Bath</h3>\n          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.</p>\n          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.</p>\n        </article>\n        <article>\n          <h3>Mr. Whiskers' First Birthday Party</h3>\n          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.</p>\n          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.</p>\n        </article>\n      </section>\n    </main>\n    <footer>\n      <section id=\"contact\">\n        <h2>Contact</h2>\n        <address>\n          <p>Phone: <a href=\"tel:5555555555\">555-555-5555</a></p>\n          <p>Email: <a href=\"mailto:fake@email.com\">fake@email.com</a></p>\n        </address>\n      </section>\n    </footer>\n  </body>\n</html>"
+    }
+  ]
+}

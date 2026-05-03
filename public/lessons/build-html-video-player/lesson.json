@@ -1,0 +1,22 @@
+{
+  "id": "build-html-video-player",
+  "title": "Build an HTML Video Player",
+  "course": "Responsive Web Design",
+  "module": "Basic HTML",
+  "type": "Workshop",
+  "description": "A native HTML video player built using the video element with multiple source formats for broad browser compatibility. The player includes MP4, WebM, OGG, and QuickTime sources, along with a poster image, playback controls, loop, and muted attributes — all without any JavaScript.",
+  "objectives": [
+    "Use the video element to embed a playable video",
+    "Add multiple source elements to support different video formats",
+    "Set type attributes to declare the correct MIME type for each source",
+    "Use poster to display a thumbnail before playback",
+    "Apply controls, loop, and muted attributes to the video element"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Working with the HTML Video Element</title>\n</head>\n<body>\n  <h1>Working with the HTML Video Element</h1>\n  <video\n    width=\"640\"\n    loop\n    controls\n    muted\n    poster=\"https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg\"\n  >\n    <source\n      src=\"https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4\"\n      type=\"video/mp4\"\n    >\n    <source\n      src=\"https://cdn.freecodecamp.org/curriculum/labs/mapmethod.webm\"\n      type=\"video/webm\"\n    >\n    <source\n      src=\"https://cdn.freecodecamp.org/curriculum/labs/mapmethod.ogg\"\n      type=\"video/ogg\"\n    >\n    <source\n      src=\"https://cdn.freecodecamp.org/curriculum/labs/mapmethod.mov\"\n      type=\"video/quicktime\"\n    >\n  </video>\n</body>\n</html>"
+    }
+  ]
+}

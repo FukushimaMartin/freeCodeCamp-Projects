@@ -1,0 +1,25 @@
+{
+  "id": "build-cat-photo-app",
+  "title": "Build a Cat Photo App",
+  "course": "Responsive Web Design",
+  "module": "Basic HTML",
+  "type": "Workshop",
+  "description": "A full cat-themed webpage built with core HTML elements. The app features sections for cat photos, lists of things cats love and hate, images with captions, a footer with a link, and proper document structure including DOCTYPE, lang attribute, head with title and charset meta tag, and a semantic body layout.",
+  "objectives": [
+    "Structure a complete HTML document with DOCTYPE, html, head, and body",
+    "Use sections to group related content",
+    "Embed images with alt text and wrap them in anchor links",
+    "Build ordered and unordered lists",
+    "Use figure and figcaption for captioned media",
+    "Apply em and strong for text emphasis",
+    "Add a footer with an external link",
+    "Set charset with a meta void element"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <title>CatPhotoApp</title>\n  </head>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <p>Everyone loves <a href=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg\">cute cats</a> online!</p>\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          <li>catnip</li>\n          <li>laser pointers</li>\n          <li>lasagna</li>\n        </ul>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg\" alt=\"A slice of lasagna on a plate.\">\n          <figcaption>Cats <em>love</em> lasagna.</figcaption>\n        </figure>\n        <h3>Top 3 things cats hate:</h3>\n        <ol>\n          <li>flea treatment</li>\n          <li>thunder</li>\n          <li>other cats</li>\n        </ol>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg\" alt=\"Two tabby kittens sleeping together on a couch.\">\n          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>\n        </figure>\n      </section>\n    </main>\n    <footer>\n      <p>\n        No Copyright - <a href=\"https://www.freecodecamp.org\">freeCodeCamp.org</a>\n      </p>\n    </footer>\n  </body>\n</html>"
+    }
+  ]
+}

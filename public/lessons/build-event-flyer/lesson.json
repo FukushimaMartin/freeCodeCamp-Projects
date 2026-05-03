@@ -1,0 +1,27 @@
+{
+  "id": "build-event-flyer",
+  "title": "Build an Event Flyer Page",
+  "course": "Responsive Web Design",
+  "module": "Absolute and Relative Units",
+  "type": "Lab",
+  "description": "A Pet Rock Festival event flyer demonstrating absolute and relative CSS units. The body uses vw for width and calc() to set min-height based on the viewport. Sections are displayed inline-block with percent widths, hr elements use percent width, and padding uses px. The layout is a fluid, centered single-page flyer with a header, three content sections, and a footer.",
+  "objectives": [
+    "Use vw to set an element's width relative to the viewport",
+    "Use calc() to compute min-height as 100vh minus padding",
+    "Set width using percentage values relative to the parent",
+    "Use display: inline-block to place sections side by side",
+    "Use the time element with a datetime attribute for semantic dates"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Pet Rock Festival</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <header>\n      <img src=\"https://cdn.freecodecamp.org/curriculum/labs/rock.jpg\" alt=\"A pet rock\">\n      <h1>Pet Rock Festival</h1>\n      <p>Join us for the first annual Pet Rock Festival!</p>\n      <p><b>When:</b> <time datetime=\"2025-10-03\">October 3rd</time> <b>Where:</b> Boulder Park</p>\n    </header>\n\n    <hr>\n\n    <main>\n      <section>\n        <h2>Festival Highlights</h2>\n        <ul>\n          <li>Pet Rock Obedience Shows</li>\n          <li>Best Dressed Pet Rock Contest</li>\n          <li>Pet Rock Uphill Racing</li>\n        </ul>\n      </section>\n\n      <section>\n        <h2>Special Guests</h2>\n        <ul>\n          <li>John Gravel</li>\n          <li>Wendy Cobblestone</li>\n        </ul>\n      </section>\n\n      <section>\n        <h2>Food Trucks</h2>\n        <ul>\n          <li>Rock 'n' Roll Tacos</li>\n          <li>Granite Grill</li>\n          <li>Stone Cold Smoothies</li>\n        </ul>\n      </section>\n    </main>\n\n    <hr>\n\n    <footer>\n      <p>&copy; 2025 Pet Rock Festival</p>\n    </footer>\n  </body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "html {\n  background-color: gray;\n}\n\nbody {\n  padding: 50px 10px;\n  margin: 0 auto;\n  width: 90vw;\n  min-height: calc(100vh - 100px);\n  background-color: white;\n  font-family: sans-serif;\n  text-align: center;\n}\n\nhr {\n  margin: 30px auto;\n  width: 80%;\n  background-color: black;\n  height: 2px;\n}\n\nmain {\n  margin: 0 auto;\n}\n\nsection {\n  text-align: center;\n  padding: 50px 5px;\n  vertical-align: top;\n  display: inline-block;\n  min-height: 100px;\n  width: 30%;\n}\n\nul {\n  text-align: left;\n  list-style: inside;\n  padding-left: 10px;\n}"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "build-accessible-audio",
+  "title": "Build an Accessible Audio Controller",
+  "course": "Responsive Web Design",
+  "module": "Accessibility",
+  "type": "Workshop",
+  "description": "An accessible audio controller built with ARIA attributes. A Play button and a Mute button provide playback controls, while a range input for volume uses aria-labelledby pointing to two span elements — a label and a description — demonstrating how ARIA can associate multiple text nodes with a single control.",
+  "objectives": [
+    "Use aria-labelledby to associate a label and description with an input",
+    "Reference multiple element IDs in a single aria-labelledby attribute",
+    "Use type='range' for a volume slider with min, max, and value",
+    "Add button elements with type='button' for custom controls"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Accessible Controls</title>\n  </head>\n  <body>\n    <h1>Audio Controls</h1>\n\n    <button type=\"button\">Play</button>\n\n    <div>\n      <span id=\"volume-label\">Volume</span>\n      <span id=\"volume-description\">Adjust the sound level</span>\n      <input type=\"range\" min=\"0\" max=\"100\" value=\"50\"\n           aria-labelledby=\"volume-label volume-description\">\n    </div>\n\n    <button type=\"button\">Mute</button>\n  </body>\n</html>"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "build-web-browsers-list",
+  "title": "Build a List of Major Web Browsers",
+  "course": "Responsive Web Design",
+  "module": "Semantic HTML",
+  "type": "Workshop",
+  "description": "A description list of five major web browsers built using dl, dt, and dd elements. Each browser gets a term entry with its name and a definition entry describing its origin, developer, and release year.",
+  "objectives": [
+    "Use a description list (dl) to pair terms with their definitions",
+    "Use dt for each term and dd for its description",
+    "Apply semantic HTML to organize reference-style content"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>List of Browsers and Descriptions</title>\n  </head>\n  <body>\n    <h1>List of Major Web Browsers</h1>\n    <dl>\n      <dt>Google Chrome</dt>\n      <dd>This is a free web browser developed by Google and first released in 2008.</dd>\n\n      <dt>Firefox</dt>\n      <dd>This is a free web browser developed by the Mozilla Corporation and first created in 2004.</dd>\n\n      <dt>Safari</dt>\n      <dd>This browser was developed by Apple and is the default browser for iPhone, iPad and Mac devices.</dd>\n\n      <dt>Brave</dt>\n      <dd>This is a free web browser first released in 2016 that is based on the Chromium web browser.</dd>\n\n      <dt>Arc</dt>\n      <dd>This is a free Chromium based web browser first released in 2023 by The Browser Company.</dd>\n    </dl>\n  </body>\n</html>"
+    }
+  ]
+}

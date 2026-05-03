@@ -15,7 +15,7 @@
 }
 
 html {
-  scrollbar-gutter: stable; /* evita desplazamiento a la izquierda */
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -145,8 +145,13 @@ body {
 }
 
 .certification {
-  background: rgba(245, 158, 11, 0.15);
+  background: rgba(248, 87, 124, 0.15);
   color: var(--certification);
+}
+
+.coming-soon {
+  background: rgba(156, 163, 175, 0.15);
+  color: var(--muted);
 }
 
 /* ===== UNORDERED LIST ===== */
@@ -176,17 +181,39 @@ body {
   background: #242454;
 }
 
-.lesson-icon{
-  width:18px;
-  height:18px;
+.lesson-icon {
+  width: 18px;
+  height: 18px;
 }
 
-.lesson-link{
+.lesson-link {
   color: inherit;
   text-decoration: none;
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.lesson-count {
+  font-size: 11px;
+  color: var(--muted);
+  margin-right: 4px;
+}
+
+.module-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.module-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
 }

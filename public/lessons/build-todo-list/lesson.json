@@ -1,0 +1,27 @@
+{
+  "id": "build-todo-list",
+  "title": "Build a Stylized To-Do List",
+  "course": "Responsive Web Design",
+  "module": "Basic CSS",
+  "type": "Lab",
+  "description": "A styled to-do list with four tasks, each containing a checkbox, a label, and a nested sub-item list with a link. The CSS demonstrates all five anchor link pseudo-classes — link, visited, hover, focus, and active — each with a distinct color or outline, along with a card-style container, rounded list items, and a square sub-item marker.",
+  "objectives": [
+    "Style anchor elements using :link, :visited, :hover, :focus, and :active pseudo-classes",
+    "Add a visible outline on :focus for keyboard accessibility",
+    "Use nested ul elements with a custom list-style-type",
+    "Associate checkbox inputs with labels using id and for",
+    "Link an external stylesheet and apply container and list styles"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>My To-Do List</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <div class=\"container\">\n      <h1>My To-Do List</h1>\n      <ul class=\"todo-list\">\n        <li>\n          <input type=\"checkbox\" id=\"task1\">\n          <label for=\"task1\">Explore gaming keyboards</label>\n          <ul class=\"sub-item\">\n            <li><a href=\"#\" target=\"_blank\" class=\"sub-item-link\">Store link</a></li>\n          </ul>\n        </li>\n        <li>\n          <input type=\"checkbox\" id=\"task2\">\n          <label for=\"task2\">Finish the report</label>\n          <ul class=\"sub-item\">\n            <li><a href=\"#\" target=\"_blank\" class=\"sub-item-link\">Request Access</a></li>\n          </ul>\n        </li>\n        <li>\n          <input type=\"checkbox\" id=\"task3\">\n          <label for=\"task3\">View Phone's Warranty</label>\n          <ul class=\"sub-item\">\n            <li><a href=\"#\" target=\"_blank\" class=\"sub-item-link\">View Receipts</a></li>\n          </ul>\n        </li>\n        <li>\n          <input type=\"checkbox\" id=\"task4\">\n          <label for=\"task4\">Check Processor Specs</label>\n          <ul class=\"sub-item\">\n            <li><a href=\"#\" target=\"_blank\" class=\"sub-item-link\">View Model Number</a></li>\n          </ul>\n        </li>\n      </ul>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "body {\n  font-family: Arial, sans-serif;\n  background-color: #f0f0f0;\n  margin: 0;\n  padding: 20px;\n}\n\n.container {\n  max-width: 400px;\n  margin: 0 auto;\n  background-color: #fff;\n  padding: 20px;\n  border-radius: 10px;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n}\n\nh1 {\n  text-align: center;\n  color: #333;\n}\n\n.todo-list {\n  list-style-type: none;\n  padding: 0;\n}\n\n.todo-list li {\n  margin-bottom: 15px;\n  line-height: 1.6;\n  padding: 10px;\n  background-color: #e5f1e5;\n  border-radius: 10px;\n  position: relative;\n}\n\na.sub-item-link {\n  margin-left: 10px;\n  text-decoration: none;\n}\n\n.sub-item-link:link {\n  color: blue;\n}\n\n.sub-item-link:visited {\n  color: purple;\n}\n\n.sub-item-link:hover {\n  color: red;\n}\n\n.sub-item-link:focus {\n  outline: 2px solid blue;\n  outline-offset: 2px;\n}\n\n.sub-item-link:active {\n  color: green;\n}\n\n.sub-item {\n  list-style-type: square;\n}"
+    }
+  ]
+}

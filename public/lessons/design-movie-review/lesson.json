@@ -1,0 +1,22 @@
+{
+  "id": "design-movie-review",
+  "title": "Design a Movie Review Page",
+  "course": "Responsive Web Design",
+  "module": "Accessibility",
+  "type": "Lab",
+  "description": "A movie review page for Rise Beyond featuring a poster image with a detailed alt description, a synopsis paragraph, a star rating using a span with aria-hidden to hide the visual stars from screen readers while showing a numeric rating for assistive technology, and a cast list using strong elements for actor names.",
+  "objectives": [
+    "Write a descriptive alt attribute for a complex image",
+    "Use aria-hidden to hide decorative star characters from screen readers",
+    "Combine visual star ratings with accessible numeric values",
+    "Use strong inside li elements to emphasize actor names",
+    "Structure a review page with h1, h2, p, ul, and img"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Movie Review: Rise Beyond</title>\n  </head>\n  <body>\n    <main class=\"review\">\n      <h1>Movie Review: Rise Beyond</h1>\n      <img src=\"https://cdn.freecodecamp.org/curriculum/labs/rise-beyond-2.png\" alt=\"The Rise Beyond movie poster, starring Ethan Carter. A portrait of a young boy standing on a stage with his back toward the audience, holding a guitar at his side, staring at a backdrop of a cityscape with the sun rising behind its tall buildings.\">\n      <p>\n        Rise Beyond is an uplifting drama that tells the story of Ethan Carter,\n        a young man from a small town who dreams of becoming a world-class\n        musician. Facing financial struggles and self-doubt, Ethan embarks on a\n        journey of resilience, guided by his mentor Professor Adams and\n        childhood friend Lena Mitchell. Through setbacks, failures, and moments\n        of triumph, Rise Beyond reminds us that our greatest potential lies\n        beyond our fears.\n      </p>\n      <p>\n        <strong>Movie Rating:</strong>\n        <span aria-hidden=\"true\">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆</span> (9.2/10)\n      </p>\n\n      <h2>Cast Members</h2>\n      <ul>\n        <li><strong>James Holloway</strong> as Ethan Carter</li>\n        <li><strong>Olivia Sterling</strong> as Lena Mitchell</li>\n        <li><strong>William Lancaster</strong> as Professor Adams</li>\n        <li><strong>Maria Collins</strong> as Evelyn Carter (Ethan's Mother)</li>\n      </ul>\n    </main>\n  </body>\n</html>"
+    }
+  ]
+}

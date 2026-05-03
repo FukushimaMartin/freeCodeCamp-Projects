@@ -1,0 +1,22 @@
+{
+  "id": "build-html-music-player",
+  "title": "Build an HTML Music Player",
+  "course": "Responsive Web Design",
+  "module": "Basic HTML",
+  "type": "Workshop",
+  "description": "A simple music player page built using the HTML audio element. Three songs by Quincy Larson are listed, each with a title heading, artist paragraph, and a native browser audio player with loop and controls enabled — no JavaScript required.",
+  "objectives": [
+    "Use the audio element to embed playable audio",
+    "Set the src attribute to point to a hosted audio file",
+    "Enable browser playback controls with the controls attribute",
+    "Use the loop attribute to repeat audio automatically",
+    "Repeat a consistent pattern of elements for multiple items"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Working with the HTML Audio Element</title>\n</head>\n<body>\n  <h1>freeCodeCamp Tunes</h1>\n\n  <h2>Can't Stay Down</h2>\n  <p>Artist: Quincy Larson</p>\n  <audio src=\"https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3\" loop controls></audio>\n\n  <h2>Cruising for a Musing</h2>\n  <p>Artist: Quincy Larson</p>\n  <audio src=\"https://cdn.freecodecamp.org/curriculum/js-music-player/cruising-for-a-musing.mp3\" loop controls></audio>\n\n  <h2>Scratching the Surface</h2>\n  <p>Artist: Quincy Larson</p>\n  <audio src=\"https://cdn.freecodecamp.org/curriculum/js-music-player/scratching-the-surface.mp3\" loop controls></audio>\n\n</body>\n</html>"
+    }
+  ]
+}
