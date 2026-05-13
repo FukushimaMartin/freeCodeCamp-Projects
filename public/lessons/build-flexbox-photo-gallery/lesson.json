@@ -1,0 +1,27 @@
+{
+  "id": "build-flexbox-photo-gallery",
+  "title": "Build a Flexbox Photo Gallery",
+  "course": "Responsive Web Design",
+  "module": "Flexbox",
+  "type": "Workshop",
+  "description": "A responsive photo gallery of nine cat images arranged with CSS flexbox. The gallery uses flex-wrap to flow images into multiple rows, object-fit: cover to fill each image slot without distortion, and a ::after pseudo-element to prevent the last row from stretching unevenly.",
+  "objectives": [
+    "Use display: flex with flex-wrap: wrap to create a multi-row layout",
+    "Use justify-content: center to center items within the flex container",
+    "Use object-fit: cover to fill image containers without distortion",
+    "Use gap to add consistent spacing between flex items",
+    "Use ::after on the container to prevent uneven last-row stretching"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <header class=\"header\">\n      <h1>css flexbox photo gallery</h1>\n    </header>\n    <div class=\"gallery\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg\" alt=\"A cat sitting on a wooden surface\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg\" alt=\"A cat lying on a couch\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg\" alt=\"A cat looking out a window\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg\" alt=\"A cat playing with a toy\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg\" alt=\"A cat sleeping on a bed\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg\" alt=\"A cat sitting in a box\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg\" alt=\"A cat perched on a shelf\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg\" alt=\"A cat stretched out on the floor\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg\" alt=\"A cat staring at the camera\">\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-family: sans-serif;\n  background: #f5f6f7;\n}\n\n.header {\n  text-align: center;\n  text-transform: uppercase;\n  padding: 32px;\n  background-color: #0a0a23;\n  color: #fff;\n  border-bottom: 4px solid #fdb347;\n}\n\n.gallery {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: center;\n  gap: 16px;\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: 20px 10px;\n}\n\n.gallery img {\n  width: 100%;\n  max-width: 350px;\n  height: 300px;\n  object-fit: cover;\n  border-radius: 10px;\n}\n\n.gallery::after {\n  content: \"\";\n  width: 350px;\n}"
+    }
+  ]
+}

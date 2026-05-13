@@ -1,0 +1,27 @@
+{
+  "id": "design-colorful-boxes",
+  "title": "Design a Set of Colorful Boxes",
+  "course": "Responsive Web Design",
+  "module": "Flexbox",
+  "type": "Workshop",
+  "description": "Six colored boxes arranged with flexbox, each demonstrating different flex item properties. The layout uses order to resequence boxes independently of the HTML, flex-grow to expand specific items, and flex-shrink to compress others. The container uses align-content: space-evenly to distribute rows vertically.",
+  "objectives": [
+    "Use the order property to resequence flex items without changing the HTML",
+    "Use flex-grow to make an item expand and fill remaining space",
+    "Use flex-shrink to allow an item to compress more than others",
+    "Use align-content to distribute multiple flex rows vertically",
+    "Use flex shorthand to set grow, shrink, and basis together"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>Colored Boxes</title>\n  <link rel=\"stylesheet\" href=\"styles.css\" />\n</head>\n<body>\n  <header>\n    <h1>Colored Boxes Layout</h1>\n  </header>\n  <div class=\"flex-container\">\n    <div class=\"box box1\"><h2>Box 1</h2><p>Red</p></div>\n    <div class=\"box box2\"><h2>Box 2</h2><p>Orange</p></div>\n    <div class=\"box box3\"><h2>Box 3</h2><p>Yellow</p></div>\n    <div class=\"box box4\"><h2>Box 4</h2><p>Green</p></div>\n    <div class=\"box box5\"><h2>Box 5</h2><p>Blue</p></div>\n    <div class=\"box box6\"><h2>Box 6</h2><p>Indigo</p></div>\n  </div>\n</body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "h1 {\n  text-align: center;\n  margin-bottom: 10px;\n}\n\n.box {\n  max-height: 120px;\n  color: #000;\n  border: 1px solid #000;\n  display: flex;\n  flex: 0 0 150px;\n  flex-direction: column;\n  align-items: center;\n  margin: 10px;\n  font-weight: bold;\n  font-size: 1.125rem;\n  border-radius: 5px;\n  order: 0;\n}\n\n.flex-container {\n  display: flex;\n  flex-wrap: wrap;\n  width: 70%;\n  height: 600px;\n  padding: 10px;\n  margin: 20px auto;\n  align-content: space-evenly;\n}\n\n.box1 { background: #f16e79; order: 1; flex-grow: 1; }\n.box2 { background: #f4a261; order: 0; }\n.box3 { background: #ffd166; order: 2; flex-shrink: 3; }\n.box4 { background: #4caf50; order: 3; }\n.box5 { background: #457b9d; order: 4; }\n.box6 { background: #3f51b5; order: 5; flex-grow: 1; }"
+    }
+  ]
+}

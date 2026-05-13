@@ -134,6 +134,7 @@ function setActiveFile(filename) {
 
   el("code-editor").value = state.files[filename] || "";
   updateLineNumbers();
+  updateHighlight();
   runPreview();
 }
 
@@ -145,6 +146,7 @@ function setupEditor() {
   editor.addEventListener("input", () => {
     state.files[state.activeFile] = editor.value;
     updateLineNumbers();
+    updateHighlight();
     schedulePreview();
   });
 
@@ -157,15 +159,31 @@ function setupEditor() {
       editor.selectionStart = editor.selectionEnd = s + indent.length;
       state.files[state.activeFile] = editor.value;
       updateLineNumbers();
+      updateHighlight();
       schedulePreview();
     }
   });
 
   editor.addEventListener("scroll", () => {
     el("line-numbers").scrollTop = editor.scrollTop;
+    el("highlight-pre").scrollTop = editor.scrollTop;
+    el("highlight-pre").scrollLeft = editor.scrollLeft;
   });
 
   updateLineNumbers();
+}
+
+function updateHighlight() {
+  const code    = el("highlight-code");
+  const content = el("code-editor").value;
+  const ext     = state.activeFile ? state.activeFile.split(".").pop() : "html";
+  const lang    = ext === "html" ? "markup" : ext === "js" ? "javascript" : ext;
+
+  // Escape HTML entities before inserting into <code>
+  code.textContent = content;
+  code.className   = `language-${lang}`;
+
+  if (window.Prism) Prism.highlightElement(code);
 }
 
 function updateLineNumbers() {

@@ -1,0 +1,27 @@
+{
+  "id": "design-feature-selection",
+  "title": "Design a Feature Selection Page",
+  "course": "Responsive Web Design",
+  "module": "Styling Forms",
+  "type": "Lab",
+  "description": "A feature selection page with six clickable card-style labels, each containing a hidden checkbox. When a checkbox is checked, its background and border color change and a white checkmark appears via ::after. The cards use absolute positioning for the checkbox and a hover box-shadow effect.",
+  "objectives": [
+    "Use appearance: none on checkboxes inside label cards",
+    "Position a checkbox absolutely within a relatively positioned label",
+    "Use :checked to change background and border color on selection",
+    "Use :checked::after to inject and display a centered checkmark",
+    "Apply :hover with box-shadow to label cards for interactivity"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Feature Selection</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>Feature Selection</h1>\n    <div class=\"feature-card-container\">\n      <label class=\"feature-card\">\n        <input type=\"checkbox\">\n        <h4>Cloud Storage</h4>\n        <p>100 Gigabyte secure storage</p>\n      </label>\n\n      <label class=\"feature-card\">\n        <input type=\"checkbox\">\n        <h4>Dedicated Support</h4>\n        <p>24/7 customer help</p>\n      </label>\n\n      <label class=\"feature-card\">\n        <input type=\"checkbox\">\n        <h4>Advanced Analytics</h4>\n        <p>Insights &amp; reports</p>\n      </label>\n\n      <label class=\"feature-card\">\n        <input type=\"checkbox\">\n        <h4>Custom User Themes</h4>\n        <p>Personalized dashboard design</p>\n      </label>\n\n      <label class=\"feature-card\">\n        <input type=\"checkbox\">\n        <h4>Multi-User Collab</h4>\n        <p>Team access and sharing</p>\n      </label>\n\n      <label class=\"feature-card\">\n        <input type=\"checkbox\">\n        <h4>API Access</h4>\n        <p>Integrate with your custom built tools</p>\n      </label>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "body {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  height: 100vh;\n}\n\n.feature-card-container {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 20px;\n  max-width: 600px;\n  justify-content: center;\n}\n\n.feature-card-container > * {\n  flex: 1 1 180px;\n}\n\n.feature-card {\n  border: 2px solid #ccc;\n  border-radius: 12px;\n  padding: 20px;\n  text-align: center;\n  position: relative;\n  cursor: pointer;\n}\n\n.feature-card:hover {\n  border-color: #f1be32;\n  box-shadow: 0 4px 12px rgba(255, 201, 53, 0.6);\n}\n\n.feature-card input[type='checkbox'] {\n  position: absolute;\n  top: 5px;\n  right: 5px;\n  width: 24px;\n  height: 24px;\n  cursor: pointer;\n  appearance: none;\n  border: 2px solid #ccc;\n  border-radius: 4px;\n  background-color: white;\n}\n\n.feature-card input[type='checkbox']:checked {\n  background-color: #f1be32;\n  border-color: #f1be32;\n}\n\n.feature-card input[type='checkbox']:checked::after {\n  content: '✓';\n  display: block;\n  text-align: center;\n  font-weight: bold;\n  color: white;\n  line-height: 20px;\n}\n\n.feature-card h4 {\n  margin: 10px 0 5px;\n  font-size: 1.2rem;\n}\n\n@media (max-width: 600px) {\n  body {\n    height: auto;\n  }\n}"
+    }
+  ]
+}

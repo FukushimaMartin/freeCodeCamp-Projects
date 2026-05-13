@@ -1,0 +1,27 @@
+{
+  "id": "build-playing-cards",
+  "title": "Build a Page of Playing Cards",
+  "course": "Responsive Web Design",
+  "module": "Build a Page of Playing Cards",
+  "type": "Certification",
+  "description": "A certification project displaying five playing cards (Ace through 5) built entirely with flexbox. Each card uses justify-content: space-between for the three columns, and each column uses align-self to anchor to the top, center, or bottom. The middle column uses flex-direction: column to stack suit symbols vertically.",
+  "objectives": [
+    "Use display: flex with justify-content: space-between on each card",
+    "Use align-self: flex-start, center, and flex-end on the three card columns",
+    "Use flex-direction: column on the middle section to stack symbols",
+    "Use transform: rotate(180deg) to flip bottom corner labels",
+    "Use flex-wrap and gap on the container to lay out multiple cards"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Straight</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <main id=\"playing-cards\">\n      <div class=\"card\">\n        <div class=\"left\"><div>A</div><div>♠</div></div>\n        <div class=\"middle\"><div>♠</div></div>\n        <div class=\"right\"><div class=\"flipped\">♠</div><div class=\"flipped\">A</div></div>\n      </div>\n\n      <div class=\"card\">\n        <div class=\"left\"><div>2</div><div>♣</div></div>\n        <div class=\"middle\"><div>♣</div><div class=\"flipped\">♣</div></div>\n        <div class=\"right\"><div class=\"flipped\">♣</div><div class=\"flipped\">2</div></div>\n      </div>\n\n      <div class=\"card red\">\n        <div class=\"left\"><div>3</div><div>♥</div></div>\n        <div class=\"middle\"><div>♥</div><div>♥</div><div class=\"flipped\">♥</div></div>\n        <div class=\"right\"><div class=\"flipped\">♥</div><div class=\"flipped\">3</div></div>\n      </div>\n\n      <div class=\"card\">\n        <div class=\"left\"><div>4</div><div>♣</div></div>\n        <div class=\"middle\">\n          <div class=\"middle-section\"><div>♣</div><div>♣</div></div>\n          <div class=\"middle-section\"><div class=\"flipped\">♣</div><div class=\"flipped\">♣</div></div>\n        </div>\n        <div class=\"right\"><div class=\"flipped\">♣</div><div class=\"flipped\">4</div></div>\n      </div>\n\n      <div class=\"card red\">\n        <div class=\"left\"><div>5</div><div>♦</div></div>\n        <div class=\"middle\">\n          <div class=\"middle-section\"><div>♦</div><div>♦</div></div>\n          <div class=\"middle-section\"><div>♦</div></div>\n          <div class=\"middle-section\"><div>♦</div><div>♦</div></div>\n        </div>\n        <div class=\"right\"><div class=\"flipped\">♦</div><div class=\"flipped\">5</div></div>\n      </div>\n    </main>\n  </body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "body {\n  background-color: Thistle;\n  min-height: 100vh;\n}\n\n.red { color: red; }\n.flipped { transform: rotate(180deg); }\n\n#playing-cards {\n  margin-top: 100px;\n  display: flex;\n  justify-content: center;\n  gap: 20px;\n  flex-wrap: wrap;\n}\n\n.card {\n  background-color: white;\n  border: 1px solid black;\n  border-radius: 10px;\n  box-shadow: 2px 2px 2px gray;\n  min-width: 250px;\n  max-width: 250px;\n  height: 350px;\n  font-size: 30px;\n  font-weight: bold;\n  padding: 5px;\n  box-sizing: border-box;\n  display: flex;\n  justify-content: space-between;\n  text-align: center;\n}\n\n.left { align-self: flex-start; }\n\n.middle {\n  align-self: center;\n  display: flex;\n  font-size: 80px;\n  flex-direction: column;\n}\n\n.right { align-self: flex-end; }\n\n.middle-section {\n  display: flex;\n  justify-content: center;\n}"
+    }
+  ]
+}

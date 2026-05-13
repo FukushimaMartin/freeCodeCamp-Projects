@@ -1,0 +1,27 @@
+{
+  "id": "build-house-painting",
+  "title": "Build a House Painting",
+  "course": "Responsive Web Design",
+  "module": "Positioning",
+  "type": "Lab",
+  "description": "A CSS house illustration using position: relative on the container and position: absolute on all child elements. The chimney uses z-index: -1 to appear behind the house, the roof sits at top: 0, the door anchors to the bottom, and both windows are placed between the roof and door.",
+  "objectives": [
+    "Use position: relative on a container to establish a positioning context",
+    "Use position: absolute on children to place them precisely within the container",
+    "Use z-index to layer the chimney behind the house",
+    "Use bottom: 0 to anchor the door to the bottom of the house",
+    "Use repeating-linear-gradient for decorative background patterns"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>House Painting</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <div id=\"house\">\n      <div id=\"chimney\"></div>\n      <div id=\"roof\"></div>\n      <div id=\"window-1\"></div>\n      <div id=\"window-2\"></div>\n      <div id=\"door\"></div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  padding: 0;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  background: linear-gradient(#b3e6ff, #b3e6ff 60%, green 60%);\n}\n\n#house {\n  width: 500px;\n  height: 400px;\n  position: relative;\n  background-color: #ff9980;\n  border: 6px solid #b35900;\n}\n\n#chimney {\n  position: absolute;\n  width: 90px;\n  height: 100px;\n  top: -100px;\n  left: 65%;\n  background: repeating-linear-gradient(#e6e6e6, #e6e6e6 10%, black 10%, black 12%);\n  border: 2px solid black;\n  z-index: -1;\n}\n\n#roof {\n  width: 100%;\n  height: 110px;\n  position: absolute;\n  top: 0;\n  border: 2px solid #b35900;\n  background: repeating-linear-gradient(45deg, #b35900, #b35900 2%, transparent 2%, transparent 5%),\n    repeating-linear-gradient(-45deg, #b35900, #b35900 2%, #ff9980 2%, #ff9980 5%);\n  background-color: #ff9980;\n}\n\n#window-1, #window-2 {\n  width: 100px;\n  height: 100px;\n  background: linear-gradient(to right, #ffffb3, #ffffb3 48%, #b35900 48%, #b35900 52%, #ffffb3 52%);\n  position: absolute;\n  top: 40%;\n  border: 6px solid #b35900;\n}\n\n#window-1 { left: 7.5%; }\n#window-2 { right: 7.5%; }\n\n#door {\n  width: 130px;\n  height: 180px;\n  position: absolute;\n  bottom: 0;\n  left: 185px;\n  background-color: #e6e6e6;\n  border: 6px solid #b35900;\n}"
+    }
+  ]
+}

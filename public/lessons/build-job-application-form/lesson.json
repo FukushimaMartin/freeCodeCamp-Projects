@@ -1,0 +1,27 @@
+{
+  "id": "build-job-application-form",
+  "title": "Build a Job Application Form",
+  "course": "Responsive Web Design",
+  "module": "Pseudo Classes and Elements",
+  "type": "Lab",
+  "description": "A job application form that uses multiple CSS pseudo-classes for real-time visual feedback. Input validation states (:valid, :invalid) change border colors to green or red, :focus highlights active fields in blue, :checked styles selected radio buttons with a border, background, and box-shadow, and :first-of-type rounds the first input's corners.",
+  "objectives": [
+    "Use :focus to highlight the active input field",
+    "Use :invalid and :valid to give real-time border color feedback",
+    "Use :checked on radio buttons to change border, background, and box-shadow",
+    "Use :checked + label to change sibling label color when selected",
+    "Use :first-of-type to style the first input differently"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Job Application</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <div class=\"container\">\n      <h1>Job Application Form</h1>\n      <form id=\"job-application\">\n        <label for=\"name\">Full Name:</label>\n        <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Enter your name\" required>\n\n        <label for=\"email\">Email:</label>\n        <input type=\"email\" id=\"email\" name=\"email\" placeholder=\"Enter your email\" required>\n\n        <label for=\"position\">Position:</label>\n        <select id=\"position\" name=\"position\" required>\n          <option value=\"\">Select a position</option>\n          <option value=\"developer\">Developer</option>\n          <option value=\"designer\">Designer</option>\n          <option value=\"manager\">Manager</option>\n        </select>\n\n        <fieldset class=\"radio-group\">\n          <legend>Availability:</legend>\n          <input type=\"radio\" id=\"fullTime\" name=\"availability\" value=\"fullTime\" checked>\n          <label for=\"fullTime\">Full-Time</label>\n          <input type=\"radio\" id=\"partTime\" name=\"availability\" value=\"partTime\">\n          <label for=\"partTime\">Part-Time</label>\n        </fieldset>\n\n        <label for=\"message\">Why do you want this job?</label>\n        <textarea id=\"message\" name=\"message\" rows=\"5\" placeholder=\"Write your motivation\" required></textarea>\n\n        <button type=\"submit\">Submit Application</button>\n      </form>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "body {\n  font-family: Arial, sans-serif;\n  background-color: white;\n  padding: 20px;\n}\n\n.container {\n  max-width: 600px;\n  margin: 0 auto;\n  background-color: white;\n  padding: 20px;\n  border-radius: 8px;\n  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n}\n\nh1 {\n  text-align: center;\n}\n\nlabel {\n  display: block;\n  margin-bottom: 5px;\n  font-weight: bold;\n}\n\ninput, select, textarea {\n  width: 100%;\n  padding: 10px;\n  margin-bottom: 15px;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n  box-sizing: border-box;\n}\n\n.radio-group {\n  display: flex;\n  align-items: center;\n  margin-top: 15px;\n}\n\n.radio-group input[type=\"radio\"] {\n  margin-right: 10px;\n  appearance: none;\n  width: 20px;\n  height: 20px;\n  border: 2px solid #ccc;\n  border-radius: 50%;\n  outline: none;\n  transition: border-color 0.2s;\n}\n\n.radio-group label {\n  margin: 0;\n  font-weight: normal;\n  cursor: pointer;\n}\n\nbutton {\n  width: 100%;\n  padding: 10px;\n  background-color: green;\n  border: none;\n  color: white;\n  border-radius: 4px;\n  font-size: 16px;\n  cursor: pointer;\n}\n\ninput:focus, textarea:focus {\n  border-color: blue;\n  outline: none;\n}\n\ninput:invalid, select:invalid, textarea:invalid {\n  border-color: red;\n}\n\ninput:valid, select:valid, textarea:valid {\n  border-color: green;\n}\n\n.radio-group input[type=\"radio\"]:checked {\n  border-color: green;\n  background-color: green;\n  box-shadow: inset 0 0 0 4px white;\n}\n\nbutton:hover {\n  background-color: black;\n}\n\ninput[type=\"radio\"]:checked + label {\n  color: green;\n}\n\ninput:first-of-type {\n  border-top-left-radius: 4px;\n  border-top-right-radius: 4px;\n}"
+    }
+  ]
+}

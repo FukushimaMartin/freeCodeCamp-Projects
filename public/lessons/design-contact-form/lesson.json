@@ -1,0 +1,27 @@
+{
+  "id": "design-contact-form",
+  "title": "Design a Contact Form",
+  "course": "Responsive Web Design",
+  "module": "Styling Forms",
+  "type": "Lab",
+  "description": "A clean contact form centered on a gradient background. The form container uses a white background with rounded corners and padding. Inputs and textarea share consistent width and padding styling, and the submit button changes background color on hover.",
+  "objectives": [
+    "Center a form container on the page using flexbox on the body",
+    "Apply background-color, border-radius, padding, and width to a form container",
+    "Style label elements with margin and color",
+    "Apply consistent width, padding, and bottom margin to inputs and textarea",
+    "Add a button hover effect that changes background color"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Styled Form Project</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <div class=\"form-container\">\n      <form>\n        <h2>Contact Us</h2>\n        <label for=\"name\">Name:</label>\n        <input type=\"text\" id=\"name\" name=\"name\" required>\n\n        <label for=\"email\">Email:</label>\n        <input type=\"email\" id=\"email\" name=\"email\" required>\n\n        <label for=\"message\">Message:</label>\n        <textarea id=\"message\" name=\"message\" required></textarea>\n\n        <button type=\"submit\">Submit</button>\n      </form>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "body {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  margin: 0;\n  background: linear-gradient(45deg, #83a4d4, #b6fbff);\n  font-family: Arial, sans-serif;\n}\n\n.form-container {\n  background-color: white;\n  border-radius: 10px;\n  padding: 20px;\n  width: 300px;\n  text-align: center;\n}\n\nform h2 {\n  margin-bottom: 20px;\n  color: #333;\n}\n\nlabel {\n  display: block;\n  margin: 10px 0 5px;\n  color: #555;\n}\n\ninput {\n  width: 100%;\n  padding: 10px;\n  margin-bottom: 10px;\n  border: 1px solid #ddd;\n  border-radius: 5px;\n  box-sizing: border-box;\n}\n\ntextarea {\n  width: 100%;\n  padding: 10px;\n  margin-bottom: 10px;\n  border: 1px solid #ddd;\n  border-radius: 5px;\n  box-sizing: border-box;\n  resize: vertical;\n}\n\nbutton {\n  background-color: #4CAF50;\n  color: white;\n  padding: 10px 15px;\n  border: none;\n  border-radius: 5px;\n  cursor: pointer;\n  font-size: 1em;\n}\n\nbutton:hover {\n  background-color: #45a049;\n}"
+    }
+  ]
+}

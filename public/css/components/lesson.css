@@ -396,6 +396,7 @@ html, body {
   display: flex;
   overflow: hidden;
   position: relative;
+  min-height: 0;
 }
 
 .line-numbers {
@@ -501,4 +502,58 @@ body.dragging * { cursor: col-resize !important; }
   .panel-divider { display: none; }
   .panel-preview { width: 100%; }
   .breadcrumb-module, .breadcrumb-sep:last-of-type { display: none; }
+}
+
+/* ── SYNTAX HIGHLIGHT MIRROR ────────────────────────────────────────────── */
+.highlight-wrap {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.highlight-pre {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: 0;
+  padding: 16px 20px;
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.7;
+  white-space: pre;
+  word-wrap: normal;
+  overflow: auto;
+  pointer-events: none;
+  background: var(--bg) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  tab-size: 2;
+}
+
+.highlight-pre code {
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.7;
+  background: none !important;
+  padding: 0 !important;
+}
+
+.code-editor {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  resize: none;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: transparent;
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.7;
+  padding: 16px 20px;
+  tab-size: 2;
+  overflow: auto;
+  white-space: pre;
+  caret-color: var(--accent);
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-2) transparent;
+  z-index: 1;
 }

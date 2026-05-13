@@ -1,0 +1,27 @@
+{
+  "id": "design-registration-form",
+  "title": "Design a Registration Form",
+  "course": "Responsive Web Design",
+  "module": "Styling Forms",
+  "type": "Workshop",
+  "description": "A fully styled registration form on a dark background. The form uses fieldsets with bottom borders as section dividers, custom file input padding, inline radio buttons via a shared .inline class, and a styled submit button. The terms link color is set separately to match the light color scheme.",
+  "objectives": [
+    "Use fieldset with border-bottom as a visual section divider",
+    "Use fieldset:last-of-type to remove the final divider border",
+    "Style input[type='submit'] independently from other inputs",
+    "Use the .inline class to override block display for radio/checkbox inputs",
+    "Set link color within a form using an anchor selector"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Registration Form</title>\n  <link rel=\"stylesheet\" href=\"styles.css\" />\n</head>\n<body>\n  <h1>Registration Form</h1>\n  <p>Please fill out this form with the required information</p>\n  <form method=\"post\" action=\"https://register-demo.freecodecamp.org\">\n    <fieldset>\n      <label for=\"first-name\">Enter Your First Name: <input id=\"first-name\" name=\"first-name\" type=\"text\" required /></label>\n      <label for=\"last-name\">Enter Your Last Name: <input id=\"last-name\" name=\"last-name\" type=\"text\" required /></label>\n      <label for=\"email\">Enter Your Email: <input id=\"email\" name=\"email\" type=\"email\" required /></label>\n      <label for=\"new-password\">Create a New Password: <input id=\"new-password\" name=\"new-password\" type=\"password\" pattern=\"[a-z0-5]{8,}\" required /></label>\n    </fieldset>\n    <fieldset>\n      <legend>Account type (required)</legend>\n      <label for=\"personal-account\"><input id=\"personal-account\" type=\"radio\" name=\"account-type\" value=\"personal\" class=\"inline\" checked /> Personal</label>\n      <label for=\"business-account\"><input id=\"business-account\" type=\"radio\" name=\"account-type\" value=\"business\" class=\"inline\" /> Business</label>\n    </fieldset>\n    <fieldset>\n      <label for=\"profile-picture\">Upload a profile picture: <input id=\"profile-picture\" type=\"file\" name=\"file\" /></label>\n      <label for=\"age\">Input your age (years): <input id=\"age\" type=\"number\" name=\"age\" min=\"13\" max=\"120\" /></label>\n      <label for=\"referrer\">How did you hear about us?\n        <select id=\"referrer\" name=\"referrer\">\n          <option value=\"\">(select one)</option>\n          <option value=\"1\">freeCodeCamp News</option>\n          <option value=\"2\">freeCodeCamp YouTube Channel</option>\n          <option value=\"3\">freeCodeCamp Forum</option>\n          <option value=\"4\">Other</option>\n        </select>\n      </label>\n      <label for=\"bio\">Provide a bio:\n        <textarea id=\"bio\" name=\"bio\" rows=\"3\" cols=\"30\" placeholder=\"I like coding on the beach...\"></textarea>\n      </label>\n    </fieldset>\n    <a href=\"https://www.freecodecamp.org/news/terms-of-service\">Read our terms and conditions</a>\n    <label for=\"terms-and-conditions\">\n      <input class=\"inline\" name=\"terms\" id=\"terms-and-conditions\" type=\"checkbox\" required />\n      I accept the terms and conditions\n    </label>\n    <input type=\"submit\" value=\"Submit\" />\n  </form>\n</body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "body {\n  width: 100%;\n  height: 100vh;\n  margin: 0;\n  background-color: #1b1b32;\n  color: #f5f6f7;\n  font-family: Tahoma;\n  font-size: 16px;\n}\n\nh1, p {\n  margin: 1em auto;\n  text-align: center;\n}\n\nform {\n  width: 60vw;\n  max-width: 500px;\n  min-width: 300px;\n  margin: 0 auto;\n  padding-bottom: 2em;\n}\n\nfieldset {\n  border: none;\n  padding: 2rem 0;\n  border-bottom: 3px solid #3b3b4f;\n}\n\nfieldset:last-of-type {\n  border-bottom: none;\n}\n\nlabel {\n  display: block;\n  margin: 0.5rem 0;\n}\n\ninput,\ntextarea,\nselect {\n  margin: 10px 0 0 0;\n  width: 100%;\n  min-height: 2em;\n}\n\ninput, textarea {\n  background-color: #0a0a23;\n  border: 1px solid #0a0a23;\n  color: #ffffff;\n}\n\n.inline {\n  width: unset;\n  margin: 0 0.5em 0 0;\n  vertical-align: middle;\n}\n\ninput[type=\"submit\"] {\n  display: block;\n  width: 60%;\n  margin: 1em auto;\n  height: 2em;\n  font-size: 1.1rem;\n  background-color: #3b3b4f;\n  border-color: white;\n  min-width: 300px;\n}\n\ninput[type=\"file\"] {\n  padding: 1px 2px;\n}\n\na {\n  color: #dfdfe2;\n}"
+    }
+  ]
+}

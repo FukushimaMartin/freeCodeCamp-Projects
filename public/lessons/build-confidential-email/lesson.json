@@ -1,0 +1,27 @@
+{
+  "id": "build-confidential-email",
+  "title": "Build a Confidential Email Page",
+  "course": "Responsive Web Design",
+  "module": "The Box Model",
+  "type": "Lab",
+  "description": "A mock confidential email page demonstrating the CSS box model. The main email container uses box-sizing: border-box so its 500px width includes padding and border. Two inline-block stamps are rotated with transform, and sensitive words are blurred using filter: blur(3px) on span elements.",
+  "objectives": [
+    "Use box-sizing: border-box to include padding and border in the element's total width",
+    "Use display: inline-block for elements that need width, height, and rotation",
+    "Use transform: rotate() to tilt stamp elements",
+    "Use filter: blur() to obscure sensitive inline text",
+    "Set margin-left to position inline-block elements horizontally"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Secret Marshmallow Mission</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <main id=\"email\">\n      <div id=\"confidential\">CONFIDENTIAL</div>\n      <p>Dear Agent <span class=\"blurred\">S'more,</span></p>\n      <p>We have an emergency. The secret formula for our <span class=\"blurred\">Mega Marshmallow</span> has been compromised. This formula is what makes our marshmallows the fluffiest and most delicious.</p>\n      <p>We suspect that <span class=\"blurred\">Professor Puff</span> is behind this. He has taken the formula to his hidden laboratory. Your mission is to infiltrate the lab and secure the formula before it's too late.</p>\n      <p>Be sure to keep the lab's location confidential. Any leak of this information could jeopardize the entire operation.</p>\n      <div id=\"top-secret\">TOP SECRET</div>\n    </main>\n  </body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "#email {\n  background-color: SeaShell;\n  margin: 50px auto;\n  padding: 50px;\n  width: 500px;\n  border: 2px solid black;\n  box-shadow: 5px 3px 3px gray;\n  box-sizing: border-box;\n}\n\n#confidential {\n  display: inline-block;\n  margin-left: 100px;\n  padding: 10px;\n  text-align: center;\n  font-size: 30px;\n  transform: rotate(-20deg);\n  color: red;\n  border: 5px solid red;\n  font-weight: bold;\n}\n\n#top-secret {\n  margin-left: 200px;\n  display: inline-block;\n  padding: 10px;\n  text-align: center;\n  font-size: 20px;\n  transform: rotate(15deg);\n  color: red;\n  border: 5px solid red;\n  font-weight: bold;\n}\n\n.blurred {\n  filter: blur(3px);\n}"
+    }
+  ]
+}

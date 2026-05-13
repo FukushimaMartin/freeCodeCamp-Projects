@@ -1,0 +1,27 @@
+{
+  "id": "build-colored-markers",
+  "title": "Build a Set of Colored Markers",
+  "course": "Responsive Web Design",
+  "module": "Colors",
+  "type": "Workshop",
+  "description": "Three CSS marker illustrations demonstrating different color formats. The red marker uses rgba(), the green marker uses hex with an alpha channel (#RRGGBBAA), and the blue marker uses hsl() for gradients and hsla() for its box-shadow, covering the full range of CSS color functions.",
+  "objectives": [
+    "Use rgb() and rgba() to define colors with opacity",
+    "Use hex color with an alpha channel (#RRGGBBAA format)",
+    "Use hsl() for readable, adjustable color definitions",
+    "Use hsla() to add transparency to an hsl color",
+    "Apply linear-gradient() to create multi-color backgrounds"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker red\">\n        <div class=\"cap\"></div>\n        <div class=\"sleeve\"></div>\n      </div>\n      <div class=\"marker green\">\n        <div class=\"cap\"></div>\n        <div class=\"sleeve\"></div>\n      </div>\n      <div class=\"marker blue\">\n        <div class=\"cap\"></div>\n        <div class=\"sleeve\"></div>\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "h1 {\n  text-align: center;\n}\n\n.container {\n  background-color: rgb(255, 255, 255);\n  padding: 10px 0;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.cap {\n  width: 60px;\n  height: 25px;\n}\n\n.sleeve {\n  width: 110px;\n  height: 25px;\n  background-color: rgba(255, 255, 255, 0.5);\n  border-left: 10px double rgba(0, 0, 0, 0.75);\n}\n\n.cap, .sleeve {\n  display: inline-block;\n}\n\n.red {\n  background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));\n  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);\n}\n\n.green {\n  background: linear-gradient(#55680D, #71F53E, #116C31);\n  box-shadow: 0 0 20px 0 #3B7E20CC;\n}\n\n.blue {\n  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));\n  box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);\n}"
+    }
+  ]
+}

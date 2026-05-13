@@ -1,0 +1,27 @@
+{
+  "id": "design-pricing-plans",
+  "title": "Design a Pricing Plans Layout Page",
+  "course": "Responsive Web Design",
+  "module": "Flexbox",
+  "type": "Lab",
+  "description": "A three-tier pricing layout built with flexbox. Each card uses display: flex with flex-direction: column and justify-content: space-between to push content to the top and bottom. The order property controls visual sequence independently of HTML order, and flex-grow: 2 on the Pro plan makes it wider than the others.",
+  "objectives": [
+    "Use display: flex on a container with flex-wrap: wrap for a responsive row",
+    "Use flex-direction: column on cards to stack content vertically",
+    "Use justify-content: space-between to push card content to top and bottom",
+    "Use the order property to control visual card sequence",
+    "Use flex-grow to make the Pro card wider than Basic and Premium"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Pricing Plans Layout</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>Pricing Plans</h1>\n    <div class=\"pricing-container\">\n      <div class=\"pricing-card pro-plan\">\n        <h2>Pro</h2>\n        <p class=\"price\">$19/month</p>\n        <ul class=\"features\">\n          <li><span class=\"check\">✓</span> Access to our core features</li>\n          <li><span class=\"check\">✓</span> Email support</li>\n          <li><span class=\"check\">✓</span> Advanced analytics</li>\n          <li><span class=\"check\">✓</span> Custom integrations</li>\n          <li><span class=\"cross\">✗</span> Priority support</li>\n        </ul>\n        <a href=\"#\">Choose Plan</a>\n      </div>\n\n      <div class=\"pricing-card basic-plan\">\n        <h2>Basic</h2>\n        <p class=\"price\">$9/month</p>\n        <ul class=\"features\">\n          <li><span class=\"check\">✓</span> Access to our core features</li>\n          <li><span class=\"check\">✓</span> Email support</li>\n          <li><span class=\"cross\">✗</span> Advanced analytics</li>\n          <li><span class=\"cross\">✗</span> Custom integrations</li>\n          <li><span class=\"cross\">✗</span> Priority support</li>\n        </ul>\n        <a href=\"#\">Choose Plan</a>\n      </div>\n\n      <div class=\"pricing-card premium-plan\">\n        <h2>Premium</h2>\n        <p class=\"price\">$29/month</p>\n        <ul class=\"features\">\n          <li><span class=\"check\">✓</span> Access to our core features</li>\n          <li><span class=\"check\">✓</span> Email support</li>\n          <li><span class=\"check\">✓</span> Advanced analytics</li>\n          <li><span class=\"check\">✓</span> Custom integrations</li>\n          <li><span class=\"check\">✓</span> Priority support</li>\n        </ul>\n        <a href=\"#\">Choose Plan</a>\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "body {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  min-height: 100vh;\n}\n\nh1 { margin-bottom: 20px; }\nh2, p { margin: 0; }\n\n.pricing-container {\n  display: flex;\n  flex-wrap: wrap;\n  align-content: center;\n  border: 2px solid #000;\n  gap: 20px;\n  width: 80%;\n  max-width: 900px;\n  height: 70vh;\n  padding: 0 20px;\n}\n\n.pricing-card {\n  background: rgb(247, 247, 247);\n  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n  padding: 20px;\n  flex: 0 0 200px;\n  text-align: center;\n  transition: transform 0.3s ease;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  border: 2px solid black;\n}\n\n.pricing-card:hover { transform: scale(1.05); }\n\n.price {\n  font-size: 1.5rem;\n  font-weight: bold;\n  color: #3e3e3e;\n  margin: 10px;\n  border-bottom: 1px solid #433d28;\n}\n\n.features {\n  list-style-type: none;\n  padding: 0;\n  text-align: left;\n}\n\n.features li { padding: 5px 0; font-size: 0.95rem; }\n.check { color: #219c54; font-weight: bold; margin-right: 8px; }\n.cross { color: crimson; font-weight: bold; margin-right: 8px; }\n\na {\n  text-decoration: none;\n  display: inline-block;\n  margin-top: 15px;\n  background: #f1be32;\n  color: #000;\n  font-weight: bold;\n  border: 3px solid #eebe3a;\n  padding: 5px;\n  transition: background 0.3s;\n}\n\na:hover { background: #f7c436; }\n\n.basic-plan { order: 0; }\n.pro-plan { order: 1; flex-grow: 2; background: #f0f8ff; }\n.premium-plan { order: 2; }"
+    }
+  ]
+}

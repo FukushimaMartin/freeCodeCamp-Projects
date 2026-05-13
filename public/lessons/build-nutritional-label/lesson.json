@@ -1,0 +1,27 @@
+{
+  "id": "build-nutritional-label",
+  "title": "Build a Nutritional Label",
+  "course": "Responsive Web Design",
+  "module": "Typography",
+  "type": "Workshop",
+  "description": "A pixel-accurate CSS nutrition facts label using Open Sans with multiple font weights. The layout uses flex for the calories row, border-bottom dividers on daily value rows via :not(.no-divider), large/medium black dividers as thick background-color bars, and indented rows for sub-nutrients. The note at the bottom uses text-indent with a negative value to align the asterisk.",
+  "objectives": [
+    "Use multiple font-weight values from a Google Fonts import",
+    "Use display: flex with justify-content: space-between on paragraph elements",
+    "Apply border-bottom selectively using :not() to skip certain rows",
+    "Use large and medium black divider bars with background-color and fixed height",
+    "Use negative text-indent paired with matching padding to align hanging text"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Nutrition Label</title>\n  <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:400,700,800\" rel=\"stylesheet\">\n  <link href=\"./styles.css\" rel=\"stylesheet\">\n</head>\n<body>\n  <div class=\"label\">\n    <header>\n      <h1 class=\"bold\">Nutrition Facts</h1>\n      <div class=\"divider\"></div>\n      <p>8 servings per container</p>\n      <p class=\"bold\">Serving size <span>2/3 cup (55g)</span></p>\n    </header>\n    <div class=\"divider large\"></div>\n    <div class=\"calories-info\">\n      <div class=\"left-container\">\n        <h2 class=\"bold small-text\">Amount per serving</h2>\n        <p>Calories</p>\n      </div>\n      <span>230</span>\n    </div>\n    <div class=\"divider medium\"></div>\n    <div class=\"daily-value small-text\">\n      <p class=\"bold right no-divider\">% Daily Value *</p>\n      <div class=\"divider\"></div>\n      <p><span><span class=\"bold\">Total Fat</span> 8g</span> <span class=\"bold\">10%</span></p>\n      <p class=\"indent no-divider\">Saturated Fat 1g <span class=\"bold\">5%</span></p>\n      <div class=\"divider\"></div>\n      <p class=\"indent no-divider\"><span><i>Trans</i> Fat 0g</span></p>\n      <div class=\"divider\"></div>\n      <p><span><span class=\"bold\">Cholesterol</span> 0mg</span> <span class=\"bold\">0%</span></p>\n      <p><span><span class=\"bold\">Sodium</span> 160mg</span> <span class=\"bold\">7%</span></p>\n      <p><span><span class=\"bold\">Total Carbohydrate</span> 37g</span> <span class=\"bold\">13%</span></p>\n      <p class=\"indent no-divider\">Dietary Fiber 4g</p>\n      <div class=\"divider\"></div>\n      <p class=\"indent no-divider\">Total Sugars 12g</p>\n      <div class=\"divider double-indent\"></div>\n      <p class=\"double-indent no-divider\">Includes 10g Added Sugars <span class=\"bold\">20%</span></p>\n      <div class=\"divider\"></div>\n      <p class=\"no-divider\"><span><span class=\"bold\">Protein</span> 3g</span></p>\n      <div class=\"divider large\"></div>\n      <p>Vitamin D 2mcg <span>10%</span></p>\n      <p>Calcium 260mg <span>20%</span></p>\n      <p>Iron 8mg <span>45%</span></p>\n      <p class=\"no-divider\">Potassium 235mg <span>6%</span></p>\n    </div>\n    <div class=\"divider medium\"></div>\n    <p class=\"note\">* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.</p>\n  </div>\n</body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "* {\n  box-sizing: border-box;\n}\n\nhtml {\n  font-size: 16px;\n}\n\nbody {\n  font-family: 'Open Sans', sans-serif;\n}\n\n.label {\n  border: 2px solid black;\n  width: 270px;\n  margin: 20px auto;\n  padding: 0 7px;\n}\n\nheader h1 {\n  text-align: center;\n  margin: -4px 0;\n  letter-spacing: 0.15px;\n}\n\np {\n  margin: 0;\n  display: flex;\n  justify-content: space-between;\n}\n\n.divider {\n  border-bottom: 1px solid #888989;\n  margin: 2px 0;\n}\n\n.bold {\n  font-weight: 800;\n}\n\n.large {\n  height: 10px;\n}\n\n.large, .medium {\n  background-color: black;\n  border: 0;\n}\n\n.medium {\n  height: 5px;\n}\n\n.small-text {\n  font-size: 0.85rem;\n}\n\n.calories-info {\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-end;\n}\n\n.calories-info h2 {\n  margin: 0;\n}\n\n.left-container p {\n  margin: -5px -2px;\n  font-size: 2em;\n  font-weight: 700;\n}\n\n.calories-info span {\n  margin: -7px -2px;\n  font-size: 2.4em;\n  font-weight: 700;\n}\n\n.right {\n  justify-content: flex-end;\n}\n\n.indent {\n  margin-left: 1em;\n}\n\n.double-indent {\n  margin-left: 2em;\n}\n\n.daily-value p:not(.no-divider) {\n  border-bottom: 1px solid #888989;\n}\n\n.note {\n  font-size: 0.6rem;\n  margin: 5px 0;\n  padding: 0 8px;\n  text-indent: -8px;\n}"
+    }
+  ]
+}

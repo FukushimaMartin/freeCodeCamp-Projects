@@ -110,6 +110,9 @@ function renderCourse(containerSelector, modules, courseId) {
       // Path is relative to the course HTML file location
       link.href      = `../lessons/lesson.html?id=${lesson.id}&course=${courseId || "responsive-web-design"}`;
       link.className = "lesson-link";
+      link.addEventListener("click", () => {
+        sessionStorage.setItem(`last-lesson-${courseId}`, lesson.id);
+      });
 
       // Left side
       const left = document.createElement("div");
@@ -158,5 +161,20 @@ function renderCourse(containerSelector, modules, courseId) {
     details.appendChild(summary);
     details.appendChild(ul);
     container.appendChild(details);
+
+    // Restore: only open the module matching the last visited lesson
+    const lastId  = sessionStorage.getItem(`last-lesson-${courseId}`);
+    const inThis  = module.lessons.some(l => l.id === lastId);
+    if (inThis) {
+      details.open = true;
+      // After render, scroll to and highlight the last lesson link
+      requestAnimationFrame(() => {
+        const link = ul.querySelector(`a[href*="${lastId}"]`);
+        if (link) {
+          link.closest("li").classList.add("lesson-last-visited");
+          link.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      });
+    }
   });
 }

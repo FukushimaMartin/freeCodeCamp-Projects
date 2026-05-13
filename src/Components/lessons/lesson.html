@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../../public/css/components/lesson.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
 </head>
 <body>
 
@@ -83,7 +84,10 @@
       </div>
       <div class="editor-wrap">
         <div class="line-numbers" id="line-numbers"></div>
-        <textarea class="code-editor" id="code-editor" spellcheck="false" autocorrect="off" autocapitalize="off"></textarea>
+        <div class="highlight-wrap">
+          <pre class="highlight-pre" id="highlight-pre" aria-hidden="true"><code class="highlight-code" id="highlight-code"></code></pre>
+          <textarea class="code-editor" id="code-editor" spellcheck="false" autocorrect="off" autocapitalize="off"></textarea>
+        </div>
       </div>
     </section>
 
@@ -104,6 +108,10 @@
 
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
   <script src="../../js/lessonViewer.js"></script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+{
+  "id": "design-greeting-card",
+  "title": "Design a Greeting Card",
+  "course": "Responsive Web Design",
+  "module": "Pseudo Classes and Elements",
+  "type": "Workshop",
+  "description": "An interactive birthday greeting card built with CSS pseudo-classes and pseudo-elements. The card uses ::before and ::after to inject emoji decorations around the heading, :hover to scale and recolor the card, and :target to show hidden sections only when their anchor links are clicked.",
+  "objectives": [
+    "Use ::before and ::after to inject content without touching the HTML",
+    "Apply :hover to trigger visual transitions on a card element",
+    "Use :target to show and hide sections based on URL fragment",
+    "Style anchor link states: hover, active, focus, and visited",
+    "Combine transition with transform for smooth hover animations"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Greeting Card</title>\n    <link href=\"styles.css\" rel=\"stylesheet\">\n  </head>\n  <body>\n    <div class=\"card\" id=\"greeting-card\">\n      <h1>Happy Birthday!</h1>\n      <p class=\"message\">\n        Wishing you all the happiness and joy on your special day!\n      </p>\n      <div class=\"card-links\">\n        <a href=\"#send\" class=\"send-link\">Send Card</a>\n        <a href=\"#share\" class=\"share-link\">Share on Social Media</a>\n      </div>\n    </div>\n    <section id=\"send\">\n      <h2>Sending your card...</h2>\n      <p>Card successfully sent to your recipient!</p>\n    </section>\n    <section id=\"share\">\n      <h2>Sharing your card...</h2>\n      <p>Your card was shared on social media!</p>\n    </section>\n  </body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "body {\n  font-family: Arial, sans-serif;\n  padding: 40px;\n  text-align: center;\n  background-color: brown;\n}\n\n.card {\n  background-color: white;\n  max-width: 400px;\n  padding: 40px;\n  margin: 0 auto;\n  border-radius: 10px;\n  box-shadow: 0 4px 8px gray;\n  transition: transform 0.3s, background-color 0.3s ease;\n}\n\n.card:hover {\n  background-color: khaki;\n  transform: scale(1.1);\n}\n\nh1::before {\n  content: \"🥳 \";\n}\n\nh1::after {\n  content: \" 🥳\";\n}\n\n.message {\n  font-size: 1.2em;\n  margin-bottom: 20px;\n}\n\n.card-links {\n  margin-top: 20px;\n  display: flex;\n  justify-content: space-around;\n}\n\n.card-links a {\n  text-decoration: none;\n  font-size: 1em;\n  padding: 10px 20px;\n  border-radius: 5px;\n  color: white;\n  background-color: midnightblue;\n  transition: background-color 0.3s ease;\n}\n\n.card-links a:hover {\n  background-color: orangered;\n}\n\n.card-links a:active {\n  background-color: midnightblue;\n}\n\n.card-links a:focus {\n  outline: 2px solid yellow;\n}\n\n.card-links a:visited {\n  color: crimson;\n}\n\nsection {\n  display: none;\n  margin: 20px auto;\n  max-width: 600px;\n  background-color: whitesmoke;\n  padding: 20px;\n  border-radius: 10px;\n}\n\nsection:hover {\n  transform: skewX(10deg);\n}\n\nsection:target {\n  display: block;\n}"
+    }
+  ]
+}

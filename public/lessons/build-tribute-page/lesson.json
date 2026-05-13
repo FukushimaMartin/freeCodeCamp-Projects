@@ -1,0 +1,27 @@
+{
+  "id": "build-tribute-page",
+  "title": "Build a Tribute Page",
+  "course": "Responsive Web Design",
+  "module": "Accessibility",
+  "type": "Lab",
+  "description": "A tribute page for Dr. Norman Borlaug using semantic HTML and responsive image techniques. The page uses a figure with figcaption for the image, a section for biographical content, and CSS that makes the image responsive with max-width: 100% and height: auto while centering it with display: block and margin: auto.",
+  "objectives": [
+    "Use a main element with an id as the top-level container",
+    "Use figure and figcaption to display a captioned image",
+    "Use max-width: 100% and height: auto for a responsive image",
+    "Center a block image with display: block and margin: 0 auto",
+    "Use an anchor with target='_blank' for an external link"
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "language": "html",
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Dr. Norman Borlaug Tribute</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <main id=\"main\">\n      <h1 id=\"title\">Dr. Norman Borlaug</h1>\n      <p>The man who saved a billion lives</p>\n      <figure id=\"img-div\">\n        <img id=\"image\" src=\"https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg\" alt=\"Dr. Norman Borlaug seen standing in Mexican wheat field with a group of biologists\">\n        <figcaption id=\"img-caption\">\n          Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.\n        </figcaption>\n      </figure>\n      <section id=\"tribute-info\">\n        <h3 id=\"headline\">Here's a time line of Dr. Borlaug's life:</h3>\n        <ul>\n          <li><strong>1914</strong> - Born in Cresco, Iowa</li>\n          <li><strong>1933</strong> - Leaves his family's farm to attend the University of Minnesota</li>\n          <li><strong>1942</strong> - Receives a Ph.D. in Genetics and Plant Pathology</li>\n          <li><strong>1944</strong> - Flies to Mexico to head a new plant pathology program</li>\n          <li><strong>1953</strong> - Creates a strain that provides 95% of Mexico's wheat</li>\n          <li><strong>1970</strong> - Receives the Nobel Peace Prize</li>\n          <li><strong>2009</strong> - Dies at the age of 95</li>\n        </ul>\n        <blockquote>\n          <p>\"Borlaug's life and achievement are testimony to the far-reaching contribution that one man's towering intellect, persistence and scientific vision can make to human peace and progress.\"</p>\n          <cite>-- Indian Prime Minister Manmohan Singh</cite>\n        </blockquote>\n        <h3>Read more about this incredible human being on his\n          <a id=\"tribute-link\" href=\"https://en.wikipedia.org/wiki/Norman_Borlaug\" target=\"_blank\">Wikipedia entry</a>.\n        </h3>\n      </section>\n    </main>\n  </body>\n</html>"
+    },
+    {
+      "name": "styles.css",
+      "language": "css",
+      "content": "html {\n  font-size: 10px;\n}\n\nbody {\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;\n  font-size: 1.6rem;\n  line-height: 1.5;\n  text-align: center;\n  color: #333;\n  margin: 0;\n}\n\nh1 {\n  font-size: 4rem;\n  margin-bottom: 0;\n}\n\nh2 {\n  font-size: 3.25rem;\n}\n\na {\n  color: #477ca7;\n}\n\na:visited {\n  color: #74638f;\n}\n\n#main {\n  margin: 30px 8px;\n  padding: 15px;\n  border-radius: 5px;\n  background: #eee;\n}\n\nimg {\n  max-width: 100%;\n  display: block;\n  height: auto;\n  margin: 0 auto;\n}\n\n#img-div {\n  background: white;\n  padding: 10px;\n  margin: 0;\n}\n\n#img-caption {\n  margin: 15px 0 5px 0;\n}\n\n#headline {\n  margin: 50px 0;\n  text-align: center;\n}\n\nul {\n  max-width: 550px;\n  margin: 0 auto 50px auto;\n  text-align: left;\n  line-height: 1.6;\n}\n\nli {\n  margin: 16px 0;\n}\n\nblockquote {\n  font-style: italic;\n  max-width: 545px;\n  margin: 0 auto 50px auto;\n  text-align: left;\n}"
+    }
+  ]
+}
